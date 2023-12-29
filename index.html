@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical CSS loading</title>
+    <link rel="stylesheet" href="critical.css">
+    <link rel="stylesheet" href="non_critical.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="non_critical.css"></noscript>
+</head>
+<body>
+    <div class="critical">
+        Critical Section
+    </div>
+    <div class="non_critical">
+        Non-Critical Section
+    </div>
+</body>
+</html>
